@@ -1,0 +1,28 @@
+.ul-container{
+    text-align: center;
+}
+
+ul{
+    display:inline-block;
+    position: relative;
+    /*width: 800px;*/
+    /*margin:0 auto;*/
+}
+.img-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 4px solid #f8f8f8;
+    box-shadow: 1px 1px #dddddd;
+    padding: 0;
+    margin: 5px;
+}
+li{
+    display: inline-block;
+    float: left;
+}
+img{
+    max-height: 200px;
+    min-width: 200px;
+    margin:0 auto;
+}
