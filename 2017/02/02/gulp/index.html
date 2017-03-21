@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Gulp gulp是一个前端自动化的构建工具。其优点是：&amp;emsp;&amp;emsp;1、避免缓存误会：js和css属于静态文件，很多时候浏览器存在缓存机制。利用构建工具，给每一个静态文件添加一个版本号，浏览器就会认为是新的文件，就不存在缓存机制。&amp;emsp;&amp;emsp;2、性能优化：文件合并，减少htt">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="饶 菁">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="gulp"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="RJ小站"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>gulp - RJ小站</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">饶菁的个人博客</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                主页
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/Learning">
+                            
+                                学习总结
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://wx1.sinaimg.cn/large/b682c9d9gy1fdk4t1k631j21kw0zz0yq.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>gulp</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-02-02
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/Learning/">Learning</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <hr>
+<h1 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h1><h2 id=""><a href="#" class="headerlink" title=" "></a><div align="center"> <img src="../../../../img/gulp.png" alt="Gulp"></div></h2><p><font size="3" face="微软雅黑">gulp是一个前端自动化的构建工具。<br>其优点是：<br>&emsp;&emsp;1、避免缓存误会：js和css属于静态文件，很多时候浏览器存在缓存机制。利用构建工具，给每一个静态文件添加一个版本号，浏览器就会认为是新的文件，就不存在缓存机制。<br>&emsp;&emsp;2、性能优化：文件合并，减少http请求；文件压缩，减少文件体积，加快下载速度；<br>&emsp;&emsp;3、效率提升：自动添加CSS3的vendor前缀；代码分析检查改正；在使用MVC和MVVM的框架后，可在提交之前，使用gulp自动跑一遍单元测试；<font></font></font></p>
+<h2 id="Gulp入门参考网站"><a href="#Gulp入门参考网站" class="headerlink" title="Gulp入门参考网站"></a>Gulp入门参考网站</h2><p><font size="3" face="微软雅黑">Gulp中文网<a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">http://www.gulpjs.com.cn/</a><font><br></font></font></p>
+<p><font size="3" face="微软雅黑">参考博客：<a href="http://www.cnblogs.com/2050/p/4198792.html" target="_blank" rel="external">http://www.cnblogs.com/2050/p/4198792.html</a><font></font></font></p>
+<hr>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><p><font size="3" face="微软雅黑">1、利用nodejs安装<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --global gulp</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">2、在项目上安装项目依赖（devDependencies）<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev gulp</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">3、在项目根目录中创建<code>gulpfile.js</code>文件<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var gulp = require(`gulp`);// 局部（node_modules）查找gulp包，找不到再去全局查找。找到后赋值给gulp变量，然后就可以使用了。</div><div class="line"></div><div class="line">gulp.task(`task－name`, function() &#123;</div><div class="line">  // 任务内容</div><div class="line">&#125;);</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">4、运行<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp task－name</div></pre></td></tr></table></figure></font></font></p>
+<hr>
+<h3 id="Gulp的API"><a href="#Gulp的API" class="headerlink" title="Gulp的API"></a>Gulp的API</h3><p><font size="3" face="微软雅黑">主要为<code>gulp.task()</code>,<code>gulp.src()</code>,<code>gulp.dest()</code>,<code>gulp.watch()</code>四个<font></font></font></p>
+<p><font size="3" face="微软雅黑">1、<code>gulp.src()</code><br><code>gulp.src()</code>用来读取你需要操作的文件<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp.src(globs[, options])</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">globs参数是文件匹配模式(类似正则表达式)，用来匹配文件路径(包括文件名)，当然这里也可以直接指定某个具体的文件路径。当有多个匹配模式时，该参数可以为一个数组。<br>options为可选参数。通常情况下我们不需要用到。<font></font></font></p>
+<p><font size="3" face="微软雅黑">2、<code>gulp.dest()</code><br><code>gulp.dest()</code>方法是用来写文件的，其语法为：<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp.dest(path[,options])</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">path为写入文件的路径<br>options为一个可选的参数对象，通常我们不需要用到<font></font></font></p>
+<p><font size="3" face="微软雅黑">3、<code>gulp.task()</code><br><code>gulp.task()</code>方法用来定义任务，其语法为：<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp.task(name[, deps], fn)</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">name 为任务名<br>deps 是当前定义的任务需要依赖的其他任务，为一个数组。当前定义的任务会在所有依赖的任务执行完毕后才开始执行。如果没有依赖，则可省略这个参数<br>fn 为任务函数，我们把任务要执行的代码都写在里面。该参数也是可选的。</font></p>
+<font>
+
+<p><font size="3" face="微软雅黑">4、<code>gulp.watch()</code><br>gulp.watch()用来监视文件的变化，当文件发生变化后，我们可以利用它来执行相应的任务，例如文件压缩等。其语法为<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp.watch(glob[, opts], tasks)</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">glob 为要监视的文件匹配模式，规则和用法与gulp.src()方法中的glob相同。<br>opts 为一个可选的配置对象，通常不需要用到<br>tasks 为文件变化后要执行的任务，为一个数组<font></font></font></p>
+<p><font size="3" face="微软雅黑"><code>gulp.watch()</code>还有另外一种使用方式：<font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp.watch(glob[, opts, cb])</div></pre></td></tr></table></figure></font></font></p>
+<p><font size="3" face="微软雅黑">glob和opts参数与第一种用法相同<br>cb参数为一个函数。每当监视的文件发生变化时，就会调用这个函数,并且会给它传入一个对象，该对象包含了文件变化的一些信息，type属性为变化的类型，可以是added,changed,deleted；path属性为发生变化的文件的路径<font></font></font></p>
+<hr>
+<h3 id="常用gulp插件"><a href="#常用gulp插件" class="headerlink" title="常用gulp插件"></a>常用gulp插件</h3><p><font size="3" face="微软雅黑">1、js文件压缩<a href="https://www.npmjs.com/package/gulp-uglify" target="_blank" rel="external">gulp-uglify</a><br>安装：<code>npm install --save-dev gulp-uglify</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">2、css文件压缩<a href="https://www.npmjs.com/package/gulp-minify-css" target="_blank" rel="external">gulp-minify-css</a><br>安装：<code>npm install --save-dev gulp-minify-css</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">3、html文件压缩<a href="https://www.npmjs.com/package/gulp-minify-html" target="_blank" rel="external">gulp-minify-html</a><br>安装：<code>npm install --save-dev gulp-minify-css</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">4、js代码检查<a href="https://www.npmjs.com/package/gulp-jshint" target="_blank" rel="external">gulp-jshint</a><br>安装：<code>npm install --save-dev gulp-jshint</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">5、文件合并<a href="https://www.npmjs.com/packages/gulp-concat" target="_blank" rel="external">gulp-concat</a><br>安装：<code>npm install --save-dev gulp-concat</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">6、less和sass的编译<br>less使用<a href="https://www.npmjs.com/packages/gulp-less" target="_blank" rel="external">gulp-less</a><br>安装：<code>npm install --save-dev gulp-less</code><br>sass使用<a href="https://www.npmjs.com/packages/gulp-sass" target="_blank" rel="external">gulp-sass</a><br>安装：<code>npm install --save-dev gulp-sass</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">7、图片压缩<a href="https://github.com/sindresorhus/gulp-imagemin" target="_blank" rel="external">gulp-imagemin</a><br>安装：<code>npm install --save-dev gulp-imagemin</code><font></font></font></p>
+<p><font size="3" face="微软雅黑">8、自动加插件<a href="https://www.npmjs.com/package/gulp-uglify" target="_blank" rel="external">gulp-load-plugins</a><br>安装：<code>npm install --save-dev gulp-load-plugins</code><font></font></font></p>
+<hr>
+<h3 id="1-7插件的gulpfile-js文件配置"><a href="#1-7插件的gulpfile-js文件配置" class="headerlink" title="1-7插件的gulpfile.js文件配置"></a>1-7插件的<code>gulpfile.js</code>文件配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">var gulp = require(&apos;gulp&apos;),</div><div class="line">    uglify=require(&quot;gulp-uglify&quot;),//压缩js</div><div class="line">    minifyCss=require(&quot;gulp-minify-css&quot;),//压缩css</div><div class="line">    minifyHtml = require(&quot;gulp-minify-html&quot;),//压缩html</div><div class="line">    jshint = require(&quot;gulp-jshint&quot;),//检查js</div><div class="line">    concat = require(&quot;gulp-concat&quot;),//合并文件</div><div class="line">    sass = require(&quot;gulp-sass&quot;);//编译SASS</div><div class="line">var imagemin = require(&apos;gulp-imagemin&apos;);</div><div class="line">var pngquant = require(&apos;imagemin-pngquant&apos;); //png图片压缩插件</div><div class="line"></div><div class="line"></div><div class="line">gulp.task(&apos;minify-js&apos;, function() &#123;</div><div class="line">    gulp.src(&apos;js/index.js&apos;)// 要压缩的js文件</div><div class="line">    .pipe(uglify())</div><div class="line">    .pipe(gulp.dest(&apos;dist/js&apos;))//压缩后的路径</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(&apos;minify-css&apos;,function()&#123;</div><div class="line">	gulp.src(&apos;css/index.css&apos;)</div><div class="line">	.pipe(minifyCss())</div><div class="line">	.pipe(gulp.dest(&apos;dist/css&apos;))</div><div class="line">&#125;)</div><div class="line"></div><div class="line">gulp.task(&apos;minify-html&apos;, function () &#123;</div><div class="line">    gulp.src(&apos;html/*.html&apos;) // 要压缩的html文件</div><div class="line">    .pipe(minifyHtml()) //压缩</div><div class="line">    .pipe(gulp.dest(&apos;dist/html&apos;));</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(&apos;jsLint&apos;, function () &#123;</div><div class="line">    gulp.src(&apos;js/*.js&apos;)</div><div class="line">    .pipe(jshint())</div><div class="line">    .pipe(jshint.reporter()); // 输出检查结果</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(&apos;concat&apos;, function () &#123;</div><div class="line">    gulp.src(&apos;js/*.js&apos;)  //要合并的文件</div><div class="line">    .pipe(concat(&apos;all.js&apos;))  // 合并匹配到的js文件并命名为 &quot;all.js&quot;</div><div class="line">    .pipe(gulp.dest(&apos;dist/js&apos;));</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(&apos;compile-sass&apos;, function () &#123;</div><div class="line">    gulp.src(&apos;sass/*.sass&apos;)</div><div class="line">    .pipe(sass())</div><div class="line">    .pipe(gulp.dest(&apos;dist/css&apos;));</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(&apos;minify-image&apos;, function () &#123;</div><div class="line">    return gulp.src(&apos;src/images/*&apos;)</div><div class="line">        .pipe(imagemin(&#123;</div><div class="line">            progressive: true,</div><div class="line">            use: [pngquant()] //使用pngquant来压缩png图片</div><div class="line">        &#125;))</div><div class="line">        .pipe(gulp.dest(&apos;dist&apos;));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</font>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 饶 菁<br></p>
+               
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
