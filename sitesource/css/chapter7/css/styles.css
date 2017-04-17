@@ -1,0 +1,54 @@
+html {
+  background-color: #fdf8ab !important; }
+  html body {
+    background-color: #ffffff;
+    max-width: 760px;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    border: 3px solid #4b4b4b;
+    box-shadow: 0 0 15px 5px rgba(44, 82, 100, 0.75);
+    font-size: 15px; }
+    html body h1 {
+      font-size: 44px;
+      font-family: Georgia,"Times New Roman",Serif;
+      color: #85a110;
+      line-height: 52.8px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 -15px 20px -15px;
+      padding: 5px 15px 2px 15px;
+      letter-spacing: 1px;
+      background-color: #e2ebb4; }
+    html body h2 {
+      font-size: 25px;
+      font-weight: bold;
+      font-family: "Arial Narrow",Arial,sans-serif;
+      color: #fc6512;
+      border-top: dotted 2px #85a110;
+      border-bottom: dotted 2px #85a110;
+      margin: 15px 0 5px 0;
+      overflow: hidden; }
+    html body .sidebar {
+      float: right;
+      width: 30%;
+      margin: 10px;
+      background-color: #faebc7;
+      border: 1px dotted #fc6512;
+      border-top: 20px solid #fc6512;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
+      html body .sidebar h2 {
+        border: none;
+        margin-top: 0;
+        padding: 0; }
+    html body .copyright {
+      text-transform: uppercase;
+      border-top: dotted 2px #85a110;
+      color: #4b4b4b;
+      font-style: italic;
+      font-size: 10px;
+      margin: 15px 0 0 0;
+      padding: 5px; }
+
+/*# sourceMappingURL=styles.css.map */

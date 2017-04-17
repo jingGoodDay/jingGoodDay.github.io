@@ -1,0 +1,40 @@
+html {
+  padding-top: 25px;
+  background-image: url("../img/bg_page.png"); }
+  html body {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #E1EDEB; }
+  html h1 {
+    font-family: 'Varela Round','Arial Black',serif;
+    font-weight: normal;
+    color: #6A94CC;
+    font-size: 3em;
+    margin: 0; }
+  html h2 {
+    color: #B1967C;
+    font-family: 'Varela Round', 'Arial Black', serif;
+    font-weight: normal;
+    font-size: 2.2em;
+    border-bottom: solid 2px white;
+    background: url("../img/head-icon.png") no-repeat 10px 10px;
+    padding: 0 0 2px 60px;
+    margin: 0; }
+  html p, html address {
+    font-family: 'Palatino Linotype','Baskerville',serif;
+    font-size: 1.25em;
+    margin-top: 10px;
+    margin-left: 60px;
+    line-height: 150%;
+    color: #616161; }
+  html .intro {
+    color: #666666;
+    font-family: 'Varela Round', 'Arial Black', serif;
+    font-size: 1.2em;
+    margin-left: 0;
+    margin-bottom: 25px; }
+
+/*# sourceMappingURL=index.css.map */
